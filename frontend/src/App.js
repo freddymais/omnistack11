@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React /*,{useState}*/ from 'react';
+// import Header from './Header'
+// import Logon from './pages/Logon'
+import './globals.css'
+import Routes from './routes'
 
 function App() {
+//   const [counter,  setCounter] = useState(0);
+// // Use State retorna Array [valor, funçao de atualizaçao]
+
+//   function increment() {
+//     setCounter(counter + 1);
+//     console.log(counter);
+//   }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Header title="Semana OmniStack 11">
+        Contador: {counter}
+      </Header>
+      <button onClick={increment}>Incrementar</button> */}
+
+      <Routes />
     </div>
   );
 }
